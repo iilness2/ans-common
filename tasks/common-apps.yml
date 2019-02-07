@@ -1,0 +1,14 @@
+---
+- name: Install Common Apps
+  apt: 
+    name: "{{item}}"
+    update_cache: yes
+    state: present
+  with_items: 
+    - build-essential
+    - nano
+    - htop
+    - iotop
+    - git
+  become_method: sudo
+  become: yes

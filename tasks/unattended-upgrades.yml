@@ -1,0 +1,14 @@
+---
+- name: Add unattended-upgrades Package
+  apt:
+    name: unattended-upgrades
+    state: present
+    update_cache: yes
+
+- name: Deploy Upgrade Configs
+  copy:
+    src: "files/{{item}}"
+    dest: /etc/apt/apt.conf.d/{{item}}
+  with_items:
+    - auto-upgrades
+    - unattended-upgrades

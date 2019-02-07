@@ -1,0 +1,13 @@
+---
+- include: common-apps.yml
+
+- include: motd.yml
+
+- include: authorize-admin-keys.yml
+
+- include: setup-app-user.yml
+  
+- include: unattended-upgrades.yml
+
+- include: newrelic.yml
+  when: newrelic_api_key is defined

@@ -1,0 +1,8 @@
+---
+- name: Remove Ubuntu MOTD Help Links
+  file:
+    path: /etc/update-motd.d/{{item}}
+    state: absent
+  with_items:
+    - 10-help-text
+    - 51-cloudguest

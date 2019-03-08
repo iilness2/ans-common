@@ -1,7 +1,7 @@
 ---
 - name: Install Common Apps
   apt: 
-    name: "{{item}}"
+    name: "{{ item }}"
     update_cache: yes
     state: present
   with_items: 

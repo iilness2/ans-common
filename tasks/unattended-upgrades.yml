@@ -7,7 +7,7 @@
 
 - name: Deploy Upgrade Configs
   copy:
-    src: "files/{{item}}"
+    src: "files/{{ item }}"
     dest: /etc/apt/apt.conf.d/{{ item }}
   with_items:
     - auto-upgrades

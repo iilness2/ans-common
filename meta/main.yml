@@ -14,7 +14,8 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  # license: license (GPLv2, CC-BY, etc)
+  license: GPLv2
 
   min_ansible_version: 2.4
 
@@ -46,6 +47,10 @@ galaxy_info:
   #   - 1.0
   #   - 7
   #   - 99.99
+  platforms:
+   - name: Ubuntu
+     versions:
+     - all
 
   galaxy_tags: []
     # List tags for your role here, one per line. A tag is a keyword that describes

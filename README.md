@@ -1,11 +1,9 @@
 Role Name
 =========
-This is ansible role, i used this role for basic setup ubuntu server at the first time a long time ago. Share it here so everybody can use it or give better enhancement
-
-License
--------
-
-BSD
+This is ansible role for setup initial ubuntu, 
+i used this config for basic setup ubuntu server a long time ago. 
+Share it here so everybody can use it or give better enhancement
+Tested at AWS Ubuntu
 
 Author Information
 ------------------

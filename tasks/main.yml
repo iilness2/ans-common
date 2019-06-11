@@ -3,8 +3,6 @@
 
 - include: motd.yml
 
-- include: authorize-admin-keys.yml
-
 - include: setup-app-user.yml
   
 - include: unattended-upgrades.yml

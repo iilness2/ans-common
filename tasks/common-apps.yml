@@ -10,5 +10,7 @@
     - htop
     - iotop
     - git
+    - software-properties-common
+    - python-software-properties
   become_method: sudo
   become: yes
